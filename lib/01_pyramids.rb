@@ -52,11 +52,11 @@ def wtf_pyramid
 		puts "Le nombre d'étages doit être impair ! Saisis un nombre impair stp :"
 		print ">"
 		full_etage = gets.chomp.to_i
+	end
 		etage = (full_etage+1) / 2
 		puts "Voici la pyramide :"
 		puts full_pyramid(etage)
 		puts full_pyramid(etage).reverse.reject.with_index{|_,i| i==0}
-	end
 end
 
 wtf_pyramid
